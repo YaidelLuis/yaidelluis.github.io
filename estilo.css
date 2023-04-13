@@ -323,21 +323,6 @@ html {
 }
 
 /* Estas clases se agregaran dinamicamente mediante javascript */
-.skills .skill .javascript {
-    width: 0%;
-    animation: 2s javascript forwards;
-}
-
-@keyframes javascript {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 75%;
-    }
-}
-
 .skills .skill .htmlcss {
     width: 0%;
     animation: 2s htmlcss forwards;
@@ -349,46 +334,61 @@ html {
     }
 
     100% {
+        width: 85%;
+    }
+}
+
+.skills .skill .flutter {
+    width: 0%;
+    animation: 2s flutter forwards;
+}
+
+@keyframes flutter {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.skills .skill .javascript {
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 65%;
+    }
+}
+
+.skills .skill .booststrap {
+    width: 0%;
+    animation: 2s booststrap forwards;
+}
+
+@keyframes booststrap {
+    0% {
+        width: 0%;
+    }
+
+    100% {
         width: 89%;
     }
 }
 
-.skills .skill .photoshop {
+.skills .skill .pythondjango {
     width: 0%;
-    animation: 2s photoshop forwards;
+    animation: 2s pythondjango forwards;
 }
 
-@keyframes photoshop {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 95%;
-    }
-}
-
-.skills .skill .wordpress {
-    width: 0%;
-    animation: 2s wordpress forwards;
-}
-
-@keyframes wordpress {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 81%;
-    }
-}
-
-.skills .skill .drupal {
-    width: 0%;
-    animation: 2s drupal forwards;
-}
-
-@keyframes drupal {
+@keyframes pythondjango {
     0% {
         width: 0%;
     }
@@ -409,7 +409,7 @@ html {
     }
 
     100% {
-        width: 80%;
+        width: 95%;
     }
 }
 
@@ -424,7 +424,7 @@ html {
     }
 
     100% {
-        width: 70%;
+        width: 96%;
     }
 }
 
@@ -439,7 +439,7 @@ html {
     }
 
     100% {
-        width: 99%;
+        width: 95%;
     }
 }
 
@@ -454,7 +454,7 @@ html {
     }
 
     100% {
-        width: 65%;
+        width: 98%;
     }
 }
 
