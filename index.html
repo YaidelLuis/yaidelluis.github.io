@@ -1,40 +1,53 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaidel Luis Araujo Collado</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/bootstrap-5.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Yaidel Luis Araujo Collado</title>
-    <link rel="stylesheet" href="estilo.css">
 </head>
 
-<body>
-    <!-- MENU ENCABEZADO -->
-    <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">Yaidel Luis 🎓💻</a>
+<body class="body">
+    <!-- NARVAR -->
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+            <div class="container-fluid">
+                <!-- nombre con efecto neon -->
+                <a class="navbar-brand" href="#">
+                    <button class="button">
+                        <span class="actual-text">&nbsp;YAIDEL LUIS&nbsp;</span>
+                        <span class="hover-text" aria-hidden="true">&nbsp;YAIDEL LUIS&nbsp;</span>
+                    </button>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+                    <!-- botones de navegacion -->
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                            <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                            <!-- <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li> -->
+                        </ul>
+                    </nav>
+                    <br>
+                </div>
             </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
-                    <!-- <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li> -->
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
-    </div>
+        </nav>
+    </header>
 
-    <!-- SECCION INICIO -->
+    <!-- Inicio -->
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
@@ -44,9 +57,9 @@
             <h2>Ingeniero en Ciencias Informáticas 🎓| Desarrollador frontend de aplicaciones webs 💻 y móviles 📱 |
                 FREELANCE</h2>
             <div class="redes">
-                <a href="https://www.linkedin.com/in/yaidel-luis-araujo-collado/"><i
+                <a class="linkedin" href="https://www.linkedin.com/in/yaidel-luis-araujo-collado/"><i
                         class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://wa.me/5353928639"><i class="fa-brands fa-whatsapp"></i></a>
+                <a class="whatsapp" href="https://wa.me/5353928639"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
     </section>
@@ -54,10 +67,12 @@
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
-            <h2>Sobre Mí</h2>
+            <div class="loader">
+                <span class="loader-text">Sobre mi:</span>
+            </div>
             <p><span>HOLA MUNDO!!, soy Yaidel Luis Araujo Collado.</span> Desarrollador Frontend de aplicaciones webs y
                 móviles
-                con poco más de 2 años de experiencia tanto en el trabajo presencial como remoto. Graduado de Ingeniería
+                con poco más de 3 años de experiencia tanto en el trabajo presencial como remoto. Graduado de Ingeniería
                 en Ciencias Informáticas me mantengo siempre en constante preparación, lo que me permite contar con
                 alta capacitad de aprendizaje de nuevas tecnologías y/o lenguajes de programación. </p>
 
@@ -68,11 +83,11 @@
                     <ul>
                         <li>
                             <strong>Teléfono</strong>
-                            (+53)53928639
+                            (+53) 53928639
                         </li>
                         <li>
                             <strong>Email</strong>
-                            yaidelaraujo@gmail.com
+                            yaidelluisac@gmail.com
                         </li>
                         <li>
                             <strong>Cargo</strong>
@@ -83,50 +98,73 @@
 
                 <!-- intereses -->
                 <div class="col">
-                    <h3>Intereses</h3>
+                    <h3>Otros Intereses</h3>
                     <div class="contenedor-intereses">
                         <div class="interes">
-                            <i class="fa-solid fa-laptop-code"></i>
-                            <span>TECNOLOGIA</span>
+                            <!-- <i class="fa-solid fa-laptop-code"></i> -->
+                            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                            <lord-icon src="https://cdn.lordicon.com/ivhjpjsw.json" trigger="hover"
+                                colors="primary:#4be1ec,secondary:#4030e8" style="width:250px;height:250px">
+                            </lord-icon>
+                            <span>TECNOLOGÍA</span>
+                        </div>
+                        <br>
+                        <div class="interes">
+                            <!-- <i class="fa-brands fa-android"></i> -->
+                            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                            <lord-icon src="https://cdn.lordicon.com/kxrhwtdg.json" trigger="hover"
+                                colors="primary:#4be1ec,secondary:#cb5eee" style="width:250px;height:250px">
+                            </lord-icon>
+                            <span>DESARROLLADO</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-brands fa-android"></i>
-                            <span>ANDROID</span>
+                            <!-- <i class="fa-solid fa-headphones"></i> -->
+                            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                            <lord-icon src="https://cdn.lordicon.com/uqcojfcp.json" trigger="hover"
+                                colors="primary:#4be1ec,secondary:#4030e8" style="width:250px;height:250px">
+                            </lord-icon>
+                            <span>MÚSICA</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-headphones"></i>
-                            <span>MUSICA</span>
+                            <!-- <i class="fa-solid fa-person-hiking"></i> -->
+                            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                            <lord-icon src="https://cdn.lordicon.com/ohiikjpf.json" trigger="hover"
+                                colors="primary:#4be1ec,secondary:#4030e8" style="width:250px;height:250px">
+                            </lord-icon>
+                            <span>DEPORTES</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-plane"></i>
-                            <span>VIAJAR</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-person-hiking"></i>
-                            <span>DEPORTE</span>
-                        </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-book"></i>
+                            <!-- <i class="fa-solid fa-book"></i> -->
+                            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                            <lord-icon src="https://cdn.lordicon.com/hursldrn.json" trigger="morph"
+                                colors="primary:#4be1ec,secondary:#4030e8" style="width:250px;height:250px">
+                            </lord-icon>
                             <span>LIBROS</span>
                         </div>
                         <div class="interes">
-                            <i class="fa-solid fa-car"></i>
-                            <span>AUTOS</span>
+                            <!-- <i class="fa-solid fa-plane"></i> -->
+                            <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
+                            <lord-icon src="https://cdn.lordicon.com/lxotnbfa.json" trigger="hover"
+                                colors="primary:#4be1ec,secondary:#4030e8" style="width:250px;height:250px">
+                            </lord-icon>
+                            <span>VIAJES</span>
                         </div>
-                        <div class="interes">
-                            <i class="fa-solid fa-camera"></i>
-                            <span>FOTOS</span>
-                        </div>
-
                     </div>
                 </div>
             </div>
             <button>
-                <a class="boton_descarga" href="CV/CV_YaidelLuisAraujoCollado_2023.pdf" download target="_blank">Descargar CV</a><i
-                    class="fa-solid fa-download"></i>
+                <a class="boton_descarga" href="CV/Yaidel-luis-araujo-collado.pdf" download target="_blank"
+                    data-tooltip="Size: 20Mb">Descargar CV</a>
+                <span></span>
+                <i class="fa-solid fa-download"></i>
                 <span class="overlay"></span>
             </button>
         </div>
+    </section>
+
+    <!-- SECCION INTERMEDIA1 -->
+    <section class="intermedia1">
+
     </section>
 
     <!-- SECCION SKILLS -->
@@ -140,40 +178,40 @@
                     <div class="skill">
                         <span>Flutter</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>80%</span>
+                            <div class="progreso bola">
+                                <span class="bola">88%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
                         <span>HTML5 & CSS3</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>85%</span>
+                            <div class="progreso bola">
+                                <span class="bola">91%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
                         <span>Javascript</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>65%</span>
+                            <div class="progreso bola">
+                                <span class="bola">80%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
                         <span>Booststrap</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>89%</span>
+                            <div class="progreso bola">
+                                <span class="bola">95%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
                         <span>Python & Django</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>55%</span>
+                            <div class="progreso bola">
+                                <span class="bola">85%</span>
                             </div>
                         </div>
                     </div>
@@ -184,223 +222,130 @@
                     <div class="skill">
                         <span>Comunicación</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
+                            <div class="progreso bola">
+                                <span class="bola">95%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
                         <span>Trabajo en Equipo</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>96%</span>
+                            <div class="progreso bola">
+                                <span class="bola">96%</span>
+
                             </div>
                         </div>
                     </div>
                     <div class="skill">
                         <span>Creatividad</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>95%</span>
+                            <div class="progreso bola">
+                                <span class="bola">96%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
                         <span>Dedicación</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>98%</span>
+                            <div class="progreso bola">
+                                <span class="bola">98%</span>
                             </div>
                         </div>
                     </div>
                     <div class="skill">
                         <span>Gestión de proyectos</span>
                         <div class="barra-skill">
-                            <div class="progreso">
-                                <span>94%</span>
+                            <div class="progreso bola">
+                                <span class="bola">94%</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
-    <div class="contenido-seccion curriculum" id="curriculum">
-        <h2>Esta página se estara actualizando próximamente ...</h2>
-    </div>
-    
-    <!-- SECCION CURRICULUM -->
-    <!-- <section id="curriculum" class="curriculum">
-        <div class="contenido-seccion">
-            <h2>Curriculum</h2>
-            <div class="fila">
-                <div class="col izquierda">
-                    <h3>Educación</h3>
-                    <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
-                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
-                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
-                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
-                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                    <div class="item izq">
-                        <h4>Arte y Multimedia</h4>
-                        <span class="casa">Universidad de Oxford</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
-                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
-                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectori">
-                            <div class="circuloi"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col derecha">
-                    <h3>Experiencia de trabajo</h3>
-                    <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
-                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
-                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
-                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
-                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                    <div class="item der">
-                        <h4>Front Developer</h4>
-                        <span class="casa">Nombre de Compañía</span>
-                        <span class="fecha">2005 - 2008</span>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora
-                            recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta
-                            aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
-                        <div class="conectord">
-                            <div class="circulod"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <!-- SECCION PORTFOLIO -->
-    <!-- <section id="portfolio" class="portfolio">
+    <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
-            <h2>PORTFOLIO</h2>
+            <h2>PORTAFOLIO</h2>
             <div class="galeria">
-                <div class="proyecto">
-                    <img src="img/p1.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p2.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p3.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p4.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p5.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-                <div class="proyecto">
-                    <img src="img/p6.jpg" alt="">
-                    <div class="overlay">
-                        <h3>Diseño Creativo</h3>
-                        <p>Fotografía</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+                <div class="row row-cols-1 row-cols-md-2 g-4">
 
-    <!-- SECCION CONTACTO -->
-    <!-- <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <div class="fila">
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
-                    <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
-                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
-                        <span class="overlay"> </span>
-                    </button>
-                </div>
-                <div class="col">
-                    <img src="img/ubicacion.png" alt="">
-                        <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Calle Martí entre 5ta y 6ta, Reparto El Eléctrico
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamanos: (+53)53928639
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: cw@example.com
-                            </li>
-                        </ul>
-                    </div> 
+                    <div class="col">
+                        <div class="card text-white bg-dark">
+                            <img src="img/frontend.png" class="card-img-top imgCard" alt="fronted web">
+                            <div class="card-body">
+                                <h5 class="card-title">Frontend web</h5>
+                                <p class="card-text">Proyectos creados utilizando lenguajes, tecnologías y/o frameworks
+                                    de desarrollo web frontend siguiendo estándares y buenas prácticas de programación
+                                    permitiendo una buena experiencia de usuario y demostrando algunas de las <a
+                                        href="#skills" style="text-decoration: none;">habilidades web</a> anteriormente
+                                    descritas.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="text-end">
+                                    <button class="continue-application">
+                                        <div>
+                                            <div class="pencil"></div>
+                                            <div class="folder">
+                                                <div class="top">
+                                                    <svg viewBox="0 0 24 27">
+                                                        <path
+                                                            d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <div class="paper"></div>
+                                            </div>
+                                        </div>
+                                        Ver Proyectos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal-dialog modal-xl">...</div>
+
+                    <div class="col">
+                        <div class="card text-white bg-dark">
+                            <img src="img/flutter.jpg" class="card-img-top imgCard" alt="flutter">
+                            <div class="card-body">
+                                <h5 class="card-title">Flutter</h5>
+                                <p class="card-text">Interfáces de usuarios para de aplicaciones Android, iOS y Webs
+                                    generadas utilizando el SDK de código abierto creado por Google: <a href="#skills"
+                                        style="text-decoration: none;">Flutter</a>. Con experiencia de trabajos remotos
+                                    con empresas extranjeras y creaciones propias siguiendo modelos autogenerados.</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="text-end">
+                                    <button class="continue-application">
+                                        <div>
+                                            <div class="pencil"></div>
+                                            <div class="folder">
+                                                <div class="top">
+                                                    <svg viewBox="0 0 24 27">
+                                                        <path
+                                                            d="M1,0 L23,0 C23.5522847,-1.01453063e-16 24,0.44771525 24,1 L24,8.17157288 C24,8.70200585 23.7892863,9.21071368 23.4142136,9.58578644 L20.5857864,12.4142136 C20.2107137,12.7892863 20,13.2979941 20,13.8284271 L20,26 C20,26.5522847 19.5522847,27 19,27 L1,27 C0.44771525,27 6.76353751e-17,26.5522847 0,26 L0,1 C-6.76353751e-17,0.44771525 0.44771525,1.01453063e-16 1,0 Z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <div class="paper"></div>
+                                            </div>
+                                        </div>
+                                        Ver Proyectos
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
     <!-- footer -->
     <footer>
@@ -408,13 +353,14 @@
             <i class="fa-solid fa-angles-up"></i>
         </a>
         <div class="redes">
-            <a href="https://www.linkedin.com/in/yaidel-luis-araujo-collado/"><i
-                class="fa-brands fa-linkedin-in"></i></a>
-        <a href="https://wa.me/5353928639"><i class="fa-brands fa-whatsapp"></i></a>
+            <a class="linkedin" href="https://www.linkedin.com/in/yaidel-luis-araujo-collado/"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a class="whatsapp" href="https://wa.me/5353928639"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="style/script.js"></script>
+    <script src="style/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>

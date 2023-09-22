@@ -1,4 +1,6 @@
+// Menu responsive
 let menuVisible = false;
+
 //Función que oculta o muestra el menu
 function mostrarOcultarMenu(){
     if(menuVisible){
@@ -15,6 +17,17 @@ function seleccionar(){
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
+
+//efecto del navbar
+const navEl = document.querySelector('.navbar');
+window.addEventListener('scroll', () => {
+    if(window.scrollY >= 450){
+        navEl.classList.add('navbar-scrolled');
+    }else if(window.scrollY < 450){
+        navEl.classList.remove('navbar-scrolled');
+    }
+});
+
 //Funcion que aplica las animaciones de las habilidades
 function efectoHabilidades(){
     var skills = document.getElementById("skills");
@@ -33,8 +46,6 @@ function efectoHabilidades(){
         habilidades[9].classList.add("proyect");
     }
 }
-
-
 //detecto el scrolling para aplicar la animacion de la barra de habilidades
 window.onscroll = function(){
     efectoHabilidades();

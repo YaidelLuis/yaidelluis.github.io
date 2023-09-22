@@ -1,2 +1,0 @@
-# yaidelluis.github.io
-Portafolio
